@@ -1,0 +1,29 @@
+
+<h1>Complete MEAN Project</h1>
+
+
+<body>
+<button type="button" class="btn btn-outline-success" (click) = "DisplayData()">Insert</button>>
+<button type="button" class="btn btn-outline-success" (click) = "DisplayData()">Display</button>>
+<button type="button" class="btn btn-outline-success" (click) = "DisplayData()">Update</button>>
+<button type="button" class="btn btn-outline-success" (click) = "DisplayData()">Delete</button>>
+</body>
+
+<table class = "w-150 table table.striped">
+  <thead>
+    <tr>
+      <th>Batch ID</th>
+      <th>Batch Name</th>
+      <th>Batch Fees</th>
+      <th>Batch Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let value of Batches">
+      <td>{{value._id}}</td>
+      <td>{{value.Batch}}</td>
+      <td>{{value.Fees}}</td>
+      <td>{{value.Duration}}</td>
+    </tr>
+  </tbody>
+</table>
